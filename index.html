@@ -38,7 +38,7 @@
 			</div>
 			</div>
 		</form>
-		
+
 		<!-- update name form -->
 		<form class="new-name my-3">
 			<div class="input-group">
@@ -54,6 +54,25 @@
 		</form>
 	</div>
   
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+	<script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+		apiKey: "AIzaSyCWZUlK5sAe604sZMdBq58e9_Ibb8Zc0gM",
+		authDomain: "udemy-modern-javascript-8f768.firebaseapp.com",
+		databaseURL: "https://udemy-modern-javascript-8f768.firebaseio.com",
+		projectId: "udemy-modern-javascript-8f768",
+		storageBucket: "udemy-modern-javascript-8f768.appspot.com",
+		messagingSenderId: "575861683092",
+		appId: "1:575861683092:web:1a0ce90cfb67bae4"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	const db = firebase.firestore();
+	</script>
   <script src="scripts/chat.js"></script>
   <script src="scripts/ui.js"></script>
   <script src="scripts/app.js"></script>
