@@ -52,17 +52,3 @@ class Chatroom {
 	}
 }
 
-const chatroom = new Chatroom('general', 'masta');
-
-chatroom.getChats((data) => {
-	console.log(data);
-});
-
-setTimeout(() => {
-	chatroom.updateRoom('gaming');
-	chatroom.updateName('djuly');
-	chatroom.getChats((data) => {
-		console.log(data);
-	});
-	chatroom.addChat('Hola por ahí!');
-}, 3000);
